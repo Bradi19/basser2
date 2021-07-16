@@ -1,0 +1,18 @@
+# public_html/.htaccess
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirect All Requests To The Subfolder
+    RewriteRule ^ /framework/surced
+
+</IfModule>
+DirectoryIndex index.php
+
+RewriteEngine On 
+RewriteRule ^$ framework/surced/index.php [L]
+RewriteRule ^((?!framework/surced/).*)$ framework/surced/$1 [L,NC]
