@@ -17,7 +17,12 @@ directory. You shall see the following files and directories:
       LICENSE              license of Yii
       README               this file
       UPGRADE              upgrading instructions
-
+            
+            
+            <code>
+            Like this download! Git clone command use!
+            Change settings in database.php
+            You have install .sql file in yours DB.</code>
 
 REQUIREMENTS
 ------------
